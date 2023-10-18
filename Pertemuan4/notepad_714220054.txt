@@ -1,0 +1,7 @@
+Bagian 1
+14. eror yang muncul:
+Error	CS0122	'Product_714220054.myType' is inaccessible due to its protection level	P4_1_714220054	
+berarti eror ini muncul pada saat mengakses variabel myType yang memiliki tingkat akses protected dari luar kelas Product_714220054. Tingkat akses protected hanya dapat diakses dalam class yang sama atau dari class turunan. Sehingga, akses protected ini diubah menjadi public agar variabel myType dapat diakses dari luar class. Kemudian, outputnya akan muncul yaitu "Book".
+
+Bagian 2
+19. output "Book" yang sebelumnya hilang karena tidak
