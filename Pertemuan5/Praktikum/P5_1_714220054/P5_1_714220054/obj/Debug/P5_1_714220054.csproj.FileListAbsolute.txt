@@ -1,0 +1,10 @@
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.csproj.AssemblyReference.cache
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.Form1.resources
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.Properties.Resources.resources
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.csproj.GenerateResource.cache
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.csproj.CoreCompileInputs.cache
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\bin\Debug\P5_1_714220054.exe.config
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\bin\Debug\P5_1_714220054.exe
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\bin\Debug\P5_1_714220054.pdb
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.exe
+C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\Pertemuan5\Praktikum\P5_1_714220054\P5_1_714220054\obj\Debug\P5_1_714220054.pdb

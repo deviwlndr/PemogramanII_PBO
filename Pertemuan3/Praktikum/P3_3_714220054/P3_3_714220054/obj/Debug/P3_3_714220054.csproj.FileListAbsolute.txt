@@ -1,7 +1,0 @@
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\bin\Debug\P3_3_714220054.exe.config
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\bin\Debug\P3_3_714220054.exe
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\bin\Debug\P3_3_714220054.pdb
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\obj\Debug\P3_3_714220054.csproj.AssemblyReference.cache
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\obj\Debug\P3_3_714220054.csproj.CoreCompileInputs.cache
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\obj\Debug\P3_3_714220054.exe
-C:\Users\Devi Wulandari\OneDrive\Documents\Semester 3\PemogramanII_PBO\P3_3_714220054\P3_3_714220054\obj\Debug\P3_3_714220054.pdb
