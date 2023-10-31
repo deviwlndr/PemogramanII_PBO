@@ -47,5 +47,15 @@ namespace P5_3_714220054
         {
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMerkHP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

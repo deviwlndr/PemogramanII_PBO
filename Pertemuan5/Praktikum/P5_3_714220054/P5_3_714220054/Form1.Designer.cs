@@ -48,6 +48,7 @@
             this.label1.Size = new System.Drawing.Size(91, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Merk HP";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -76,6 +77,7 @@
             this.txtMerkHP.Name = "txtMerkHP";
             this.txtMerkHP.Size = new System.Drawing.Size(186, 31);
             this.txtMerkHP.TabIndex = 3;
+            this.txtMerkHP.TextChanged += new System.EventHandler(this.txtMerkHP_TextChanged);
             // 
             // rb_android
             // 
