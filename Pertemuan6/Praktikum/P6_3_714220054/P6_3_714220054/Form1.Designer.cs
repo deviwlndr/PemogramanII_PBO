@@ -118,6 +118,7 @@
             this.txtAngka.Name = "txtAngka";
             this.txtAngka.Size = new System.Drawing.Size(379, 26);
             this.txtAngka.TabIndex = 7;
+            this.txtAngka.TextChanged += new System.EventHandler(this.txtAngka_TextChanged);
             this.txtAngka.Leave += new System.EventHandler(this.txtAngka_Leave);
             // 
             // txtEmail

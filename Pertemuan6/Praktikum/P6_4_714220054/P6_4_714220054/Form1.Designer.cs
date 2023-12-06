@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -35,14 +37,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -125,14 +132,6 @@
             this.checkBox2.Text = "Debit Card";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(279, 128);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
-            this.numericUpDown1.TabIndex = 8;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -142,6 +141,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 26);
             this.label8.TabIndex = 9;
+            this.label8.TextChanged += new System.EventHandler(this.label8_TextChanged);
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
@@ -164,6 +164,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 26);
             this.label10.TabIndex = 11;
+            this.label10.TextChanged += new System.EventHandler(this.label8_TextChanged);
             // 
             // button1
             // 
@@ -189,15 +190,39 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // epWarning
+            // 
+            this.epWarning.ContainerControl = this;
+            this.epWarning.Icon = ((System.Drawing.Icon)(resources.GetObject("epWarning.Icon")));
+            // 
+            // epWrong
+            // 
+            this.epWrong.ContainerControl = this;
+            this.epWrong.Icon = ((System.Drawing.Icon)(resources.GetObject("epWrong.Icon")));
+            // 
+            // epCorrect
+            // 
+            this.epCorrect.ContainerControl = this;
+            this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(280, 127);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(259, 26);
+            this.textBox2.TabIndex = 14;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(794, 357);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -205,9 +230,11 @@
             this.Controls.Add(this.label4);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,12 +252,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ErrorProvider epWarning;
+        private System.Windows.Forms.ErrorProvider epWrong;
+        private System.Windows.Forms.ErrorProvider epCorrect;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

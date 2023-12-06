@@ -158,5 +158,10 @@ namespace P6_3_714220054
                 }
             }
         }
+
+        private void txtAngka_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

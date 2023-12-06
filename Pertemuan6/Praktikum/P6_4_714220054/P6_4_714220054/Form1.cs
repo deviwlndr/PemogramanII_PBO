@@ -44,23 +44,9 @@ namespace P6_4_714220054
 
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            label8.Text = numericUpDown1.Value.ToString();
-            int quantity = (int)numericUpDown1.Value;
-            
-
-            if (quantity == 0)
-            {
-                MessageBox.Show("Masukan kuantitas", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-            }
-
-        }
-
         private void label8_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,9 +66,26 @@ namespace P6_4_714220054
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text))
+            if (textBox1.Text == "")
             {
-                MessageBox.Show("Menu tidak boleh kosong.", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                epWarning.SetError(textBox1, "Menu tidak boleh kosong!");
+            }
+            else
+            {
+
+
+                if ((textBox1.Text).All(Char.IsLetter))
+                {
+                    epWarning.SetError(textBox1, "");
+                    epWrong.SetError(textBox1, "");
+                    epCorrect.SetError(textBox1, "Betul Betul Betul!");
+                }
+                else
+                {
+                    epWrong.SetError(textBox1, "Inputan hanya boleh huruf!");
+                    epWarning.SetError(textBox1, "");
+                    epCorrect.SetError(textBox1, "");
+                }
             }
         }
 
@@ -93,26 +96,62 @@ namespace P6_4_714220054
 
             if (checkBox1.Checked)
             {
-                groupBox1 = "Cash";
+                groupBox1 += "Cash";
             }
             if (checkBox2.Checked)
             {
-                groupBox1 = "Debit Card";
+                groupBox1 += "Debit Card";
             }
 
-            if (string.IsNullOrEmpty(input))
+            else if (string.IsNullOrEmpty(groupBox1))
             {
-                MessageBox.Show("Input tidak boleh kosong.", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Anda harus memilih metode pembayaran.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if (string.IsNullOrEmpty(input))
             {
-                MessageBox.Show("Pesanan: " + textBox1.Text + "\nKuantitas: " + numericUpDown1.Value + "\nMetode Pembayaran: " + groupBox1 , "\nInformasi",  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Pesanan: " + textBox1.Text + "\nKuantitas: " + textBox2 + "\nMetode Pembayaran: " + groupBox1 , "\nInformasi",  MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void label8_TextChanged(object sender, EventArgs e)
+        {
+                
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+            {
+                epWarning.SetError(textBox2, "Kuantitas tidak boleh kosong!");
+            }
+            else
+            {
+                if ((textBox2.Text).All(Char.IsNumber))
+                {
+                    epCorrect.SetError(textBox2, "Betul!");
+                    epWarning.SetError(textBox2, "");
+                    epWrong.SetError(textBox2, "");
+                }
+                else
+                {
+                    epCorrect.SetError(textBox2, "");
+                    epWarning.SetError(textBox2, "");
+                    epWrong.SetError(textBox2, "Inputan hanya boleh angka!");
+                }
+            }
         }
     }
 }
