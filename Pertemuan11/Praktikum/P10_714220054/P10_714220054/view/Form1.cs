@@ -21,6 +21,7 @@ namespace P10_714220054
         public void Tampil()
         {
             //Query DB Get MGS
+            //query data mahasiswa dimasukan ke datapreview
             DataMahasiswa.DataSource = koneksi.ShowData("SELECT * FROM t_mahasiswa");
             //mengubah nama kolom tabel
             DataMahasiswa.Columns[0].HeaderText = "NPM";
@@ -40,7 +41,7 @@ namespace P10_714220054
             npm.Text = "";
             nama.Text = "";
             angkatan.SelectedIndex = -1;
-           alamat.Text= "";
+            alamat.Text= "";
             email.Text = "";
             nohp.Text="";
         }
@@ -54,6 +55,7 @@ namespace P10_714220054
 
         private void btnsimpan_Click(object sender, EventArgs e)
         {
+            //penggunaan OR karena harus di cek satu2 jika penggunaan && ekspresi tersebut akan menjadi "benar" hanya jika semua kondisi yang diperiksa bernilai benar. 
             if (npm.Text == "" || nama.Text == "" || angkatan.SelectedIndex == -1 || alamat.Text == "" || email.Text == "" || nohp.Text == "")
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -79,6 +81,7 @@ namespace P10_714220054
 
         private void DataMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //cell index ke 0 masuk ke npm text
             npm.Text = DataMahasiswa.Rows[e.RowIndex].Cells[0].Value.ToString();
             nama.Text = DataMahasiswa.Rows[e.RowIndex].Cells[1].Value.ToString();
             angkatan.Text = DataMahasiswa.Rows[e.RowIndex].Cells[2].Value.ToString();
