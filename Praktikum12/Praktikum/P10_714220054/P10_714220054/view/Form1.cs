@@ -18,6 +18,7 @@ namespace P10_714220054
         Koneksi koneksi = new Koneksi();
         
         M_mahasiswa m_mhs = new M_mahasiswa();
+        
         public void Tampil()
         {
             //Query DB Get MGS

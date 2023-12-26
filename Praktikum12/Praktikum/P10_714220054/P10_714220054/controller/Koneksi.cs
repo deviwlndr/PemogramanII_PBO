@@ -10,7 +10,7 @@ namespace P10_714220054
 {
     internal class Koneksi
     {
-        string conectionstring = "Server=localhost;Database=ulbi;Uid=root;Pwd=;";
+        string conectionstring = "Server=localhost;Database=ulbi2;Uid=root;Pwd=;";
         MySqlConnection kon;
 
         public void OpenConnection()

@@ -126,3 +126,5 @@ C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054
 C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054\obj\Debug\P10_714220054.csproj.CopyComplete
 C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054\obj\Debug\P10_714220054.view.ParentForm.resources
 C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054\obj\Debug\P10_714220054.view.FormNilai.resources
+C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054\obj\Debug\P10_714220054.view.FormBarang.resources
+C:\Semester 3\PemogramanII_PBO\Praktikum12\Praktikum\P10_714220054\P10_714220054\obj\Debug\P10_714220054.view.FormTransaksi.resources
